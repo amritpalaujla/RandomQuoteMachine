@@ -12,3 +12,7 @@
   display: flex;
   margin-top: 28em;
 }
+
+#quote {
+  color: white;
+}

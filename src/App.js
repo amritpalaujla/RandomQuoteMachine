@@ -1,21 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { useEffect } from "react";
+import Quote from "./components/Quote.js";
 
 function App() {
-  useEffect(() => {
-    fetch("https://dummyjson.com/quotes")
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (data) {
-        console.log(data);
-      });
-  });
-
   return (
     <div className="App">
-      <div id="quoteBox"></div>
+      <div id="quoteBox">
+        <Quote />
+      </div>
     </div>
   );
 }
