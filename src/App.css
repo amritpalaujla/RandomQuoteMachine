@@ -1,18 +1,29 @@
-.App {
-  text-align: center;
+/*This will allow us to take up the whole page */
+html,
+body,
+#root {
   height: 100%;
-  width: 100%;
+  margin: 0;
+}
+.App {
+  height: 100%; /*don't forget that height is not inherited so we had to redefine it here*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: center; /* horizontal centering */
 }
 
 #quoteBox {
-  height: 16em;
-  width: 32em;
+  text-align: center;
   background-color: black;
-  margin: auto;
-  display: flex;
-  margin-top: 28em;
+  margin-left: 20em;
+  margin-right: 20em;
+  justify-content: center;
 }
 
 #quote {
   color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2em;
+  margin: 2em;
 }
