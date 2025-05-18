@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
+import { FaQuoteLeft } from "react-icons/fa";
 
 const Quote = () => {
   //here we are creating state vatiables which we can use later to get a quote
@@ -31,7 +32,14 @@ const Quote = () => {
   if (quotes.length === 0) {
     return;
   } else {
-    return <p id="quote">{quotes[idx].quote}</p>;
+    return (
+      <div>
+        <span id="qMark">
+          <FaQuoteLeft />
+        </span>
+        <p id="quote">{quotes[idx].quote}</p>
+      </div>
+    );
   }
 };
 
