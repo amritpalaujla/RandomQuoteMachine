@@ -20,6 +20,9 @@ body,
   margin-left: 20em;
   margin-right: 20em;
   justify-content: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  max-width: 35%;
 }
 
 #quote {
@@ -30,7 +33,9 @@ body,
 }
 
 #qMark {
-  position: relative;
-  top: 20px;
-  right: 18em;
+  margin: 10px;
+}
+
+#author {
+  margin: 1em;
 }

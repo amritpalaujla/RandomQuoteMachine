@@ -34,10 +34,15 @@ const Quote = () => {
   } else {
     return (
       <div>
-        <span id="qMark">
-          <FaQuoteLeft />
-        </span>
-        <p id="quote">{quotes[idx].quote}</p>
+        <p id="quote">
+          <span id="qMark">
+            <FaQuoteLeft />
+          </span>
+          {quotes[idx].quote}
+        </p>
+        <p id="author">
+          <i>~ {quotes[idx].author}</i>
+        </p>
       </div>
     );
   }
