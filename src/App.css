@@ -23,6 +23,7 @@ body,
   padding-left: 2em;
   padding-right: 2em;
   max-width: 35%;
+  border-radius: 9px;
 }
 
 #quote {
@@ -37,5 +38,11 @@ body,
 }
 
 #author {
-  margin: 1em;
+  margin: auto;
+}
+
+#Btn {
+  display: flex;
+  justify-content: end;
+  padding: 5px;
 }
