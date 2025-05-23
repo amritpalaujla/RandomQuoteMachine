@@ -1,3 +1,7 @@
+:root {
+  --randomColor: white;
+}
+
 /*This will allow us to take up the whole page */
 html,
 body,
@@ -11,12 +15,13 @@ body,
   flex-direction: column;
   justify-content: center; /* vertical centering */
   align-items: center; /* horizontal centering */
-  color: white;
+  color: black;
 }
 
 #quoteBox {
   text-align: center;
-  background-color: black;
+  background-color: white;
+  border: solid black 2px;
   margin-left: 20em;
   margin-right: 20em;
   justify-content: center;
@@ -27,7 +32,7 @@ body,
 }
 
 #quote {
-  color: white;
+  color: black;
   font-family: "Times New Roman", Times, serif;
   font-size: 1.2em;
   margin: 2em;
@@ -41,8 +46,26 @@ body,
   margin: auto;
 }
 
+button {
+  padding: 5px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: var(--randomColor);
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: white;
+}
 #Btn {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   padding: 5px;
+}
+
+/*I thought it would be nice to have the new quote button centered on smaller screens */
+@media only screen and (min-width: 992px) {
+  #Btn {
+    display: flex;
+    justify-content: end;
+    padding: 5px;
+  }
 }
